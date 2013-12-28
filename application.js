@@ -1,15 +1,15 @@
-$(function (){
-  initialize();
-});    
+$document.ready(function() { 
     var target = Math.floor(Math.random()*99+1); //Global var, generates a number between 1 and 100.
     function initialize() {
-        $('#submit').click(submit);
+        $('#submit').click(function() {
+            submit();
+        });
     };
-    var submit = function() {
+    function submit() {
         var guess = $("#guess_number").val(); //Global var, asks user for a guess.
         compare(guess);
     }
-    var compare = function(guess) {
+    function compare(guess) {
         var number = Number(guess);
         if (isNaN(number)) {  // if the user input is not a valid number, prompts user for a new guess.
             $("#response").html("Please enter a number.");
@@ -23,7 +23,7 @@ $(function (){
     }; 
 
 
-    var difference = function(num) {  // determines how big of difference between user guess and target number.
+    function difference(num) {  // determines how big of difference between user guess and target number.
         var diff = Math.abs(num-target);
         if(diff < 10) {
             $("#response").html("Hot!");
@@ -33,3 +33,4 @@ $(function (){
             return;
         }
     };
+});  

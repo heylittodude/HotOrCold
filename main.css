@@ -1,0 +1,59 @@
+body {
+	text-align: center;
+	font-family: Arial, sans-serif;
+	min-width: 900px;
+	background-image: url('images/Grey-background.jpg');
+}
+
+h1 {
+	margin-bottom: 100px;
+}
+
+h2 {
+	margin-bottom: 100px;
+}
+
+#hot {
+	color: red;
+	text-shadow: 0 0 0.2em #600f0f, 0 0 0.2em #600f0f;
+}
+
+#cold {
+	color: #19A3D1;
+	text-shadow: 0 0 0.2em #0e3e9e, 0 0 0.2em #0e3e9e;
+}
+
+#form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+  	background: linear-gradient(#C3C3C5, #9B9B9E);
+  	border: 1px solid #d0d2d5;
+  	border-bottom: 1px solid #bebfc2;
+  	border-radius: 4px;
+  	padding: 20px;
+  	width: 400px;
+  	box-shadow: 0 0 0.2em #5D5D5F, 0 0 0.2em #5D5D5F, 0 0 0.2em #5D5D5F;
+}
+
+#guess_number {
+	border: 2px solid #5D5D5F;
+}
+
+#response {
+	border: none;
+	margin-top: 5px;
+	min-height: 30px;
+}
+
+#newGame {
+	margin-top: 20px;
+}
+
+.buttons {
+	background: linear-gradient(#687587, #404853);
+  	border: 1px solid #5D5D5F;
+  	color: #FFF; 
+  	font-weight: bold;
+}

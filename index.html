@@ -8,9 +8,12 @@
 		<title>HotOrCold</title>
 	</head>
 	<body>
-		<h1>The computer has chosen a number between 1 and 100.  Can you guess it?</h1>
-    	<input type="text" name="guess_number" id="guess_number">
-    	<input type="submit" name="submit" id="submit" value="Submit">
-    	<div id="response"></div>
-    
+		<h1><span id="hot">Hot</span> or <span id="cold">Cold</span>?</h1>
+		<h2>The computer has chosen a number between 1 and 100. <br>Can you guess it?</h2>
+    	<div id="form">
+    		<input type="text" name="guess_number" id="guess_number">
+    		<input type="submit" name="submit" id="submit" class="buttons" value="Submit">
+    		<div id="response"></div>
+    		<button name="newGame" id="newGame" class="buttons">New Game</button>
+    	</div>
 	</body>

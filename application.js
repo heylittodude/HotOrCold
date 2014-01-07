@@ -104,6 +104,7 @@ $(document).ready(function() {
     $('#newGame').click(function(event) {  //Upon click button start new game with new target value and reset progress bar.
         event.preventDefault();
         target = Math.floor(Math.random()*99+1);
+        previousDiff = 0;
         $("#progressBar").progressbar({value: 0});
         console.log(target);
         $("#response").html("New Game Started!").css({color: 'black'});

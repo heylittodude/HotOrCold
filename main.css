@@ -47,6 +47,9 @@ h2 {
 	min-height: 30px;
 }
 
+.guesses {
+	height: 20px;
+}
 #newGame {
 	margin-top: 20px;
 }
@@ -56,6 +59,10 @@ h2 {
   	border: 1px solid #5D5D5F;
   	color: #FFF; 
   	font-weight: bold;
+}
+
+.buttons:hover {
+	box-shadow: 0 0 0.2em #2D323A, 0 0 0.2em #2D323A;
 }
 
 #progressBar {
